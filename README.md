@@ -2,26 +2,26 @@
 
 Cybersecurity demonstrations for local use with dummy data.
 
-IT-30001 Cyber Security | Web Server Security Assignment | Autumn 2026
+**IT-30001 Cyber Security | Web Server Security Assignment | Autumn 2026**
 
-- [SQL Injection – Authentication Bypass](./sql-injection-auth-bypass-demo/README.md) : Node.js + Express + SQLite login with vulnerable and parameterised-query forms side by side. — **IIT2024256**
-- [Cross-Site Scripting (XSS)](./xss-demo/README.md) : _(variant / stack — fill in once built)_ — _(teammate)_
-- [OS Command Injection](./os-command-injection-demo/README.md) : _(variant / stack — fill in once built)_ — _(teammate)_
-- [CSRF](./csrf-demo/README.md) : _(variant / stack — fill in once built)_ — _(teammate)_
+## Demonstrations
 
-Each folder is self-contained — follow that folder's own README for setup and startup instructions.
+- [SQL Injection – Authentication Bypass](./sql-injection-auth-bypass-demo/README.md): Node.js + Express + SQLite login with vulnerable and parameterized-query forms side by side. — **IIT2024256**
+- [Cross-Site Scripting (XSS) – Reflected XSS](./xss-reflected-demo/README.md): Node.js + Express web application demonstrating reflected XSS and HTML output encoding mitigation. — **Aniket Gautam (IIT2024253)**
+- [OS Command Injection](./os-command-injection-demo/README.md): *Variant and stack to be added.* — *Teammate*
+- [CSRF](./csrf-demo/README.md): *Variant and stack to be added.* — *Teammate*
 
-## Ownership declaration
+Each folder is self-contained. Follow that folder's README for setup and startup instructions.
 
-| Member name | Roll number | Category               | Variant implemented         |
-|-------------|-------------|--------------------------|-------------------------------|
-| Adarsh Tiwari     | IIT2024256   | SQL Injection            | Authentication bypass         |
-| _(teammate)_| _(roll)_     | _(category)_            | _(variant)_                   |
-| _(teammate)_| _(roll)_     | _(category)_            | _(variant)_                   |
-| _(teammate)_| _(roll)_     | _(category)_            | _(variant)_                   |
+## Ownership Declaration
 
-## Authorised testing note
+| Member name | Roll number | Category | Variant implemented |
+|---|---|---|---|
+| Adarsh Tiwari | IIT2024256 | SQL Injection | Authentication bypass |
+| Aniket Gautam | IIT2024253 | Cross-Site Scripting (XSS) | Reflected XSS |
+| *Teammate* | *Roll number* | OS Command Injection | *Variant to be added* |
+| *Teammate* | *Roll number* | CSRF | *Variant to be added* |
 
-Every application in this repo runs locally against dummy, self-seeded
-data. Exploits are demonstrated only against these local apps, never
-against shared classroom infrastructure or any hosting provider.
+## Authorized Testing Note
+
+Every application in this repository is intended to run locally using dummy, self-seeded data. Exploits are demonstrated only against these local applications, never against shared classroom infrastructure or any hosting provider.
