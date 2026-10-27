@@ -15,7 +15,7 @@ Each folder is self-contained — follow that folder's own README for setup and 
 
 | Member name | Roll number | Category               | Variant implemented         |
 |-------------|-------------|--------------------------|-------------------------------|
-| _(you)_     | IIT2024256   | SQL Injection            | Authentication bypass         |
+| Adarsh Tiwari     | IIT2024256   | SQL Injection            | Authentication bypass         |
 | _(teammate)_| _(roll)_     | _(category)_            | _(variant)_                   |
 | _(teammate)_| _(roll)_     | _(category)_            | _(variant)_                   |
 | _(teammate)_| _(roll)_     | _(category)_            | _(variant)_                   |
