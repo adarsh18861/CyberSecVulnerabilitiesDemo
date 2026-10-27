@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>XSS Lab · Web Security Playground</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <nav class="topbar wrap">
+    <a class="brand" href="/"><span class="brand-mark">X</span><span>XSS<span class="brand-light">LAB</span></span></a>
+    <div class="nav-right"><span class="local-pill"><i></i> LOCAL ENVIRONMENT</span><a class="nav-link" href="#about">About <span>↓</span></a></div>
+  </nav>
+  <main class="wrap hero-main">
+    <section class="hero">
+      <div class="eyebrow"><span class="eyebrow-line"></span> WEB SERVER SECURITY <span class="eyebrow-chip">INTERACTIVE LAB</span></div>
+      <h1>See the flaw.<br><span>Understand the fix.</span></h1>
+      <p class="hero-lead">A hands-on playground for understanding reflected Cross-Site Scripting — how unsafe output behaves, and how context-aware encoding helps prevent it.</p>
+      <div class="hero-actions"><a class="button button-primary" href="/vulnerable">Open vulnerable demo <span>↗</span></a><a class="button button-secondary" href="/secure">View secured version <span>→</span></a></div>
+      <div class="hero-meta"><span><i class="meta-dot purple-dot"></i> Two implementations</span><span><i class="meta-dot green-dot"></i> Runs on localhost</span><span><i class="meta-dot orange-dot"></i> Built for learning</span></div>
+    </section>
+    <section class="overview-strip">
+      <div class="strip-intro"><span class="strip-icon">⌘</span><div><strong>Your testing workflow</strong><p>Compare the same input in both versions.</p></div></div>
+      <div class="workflow-step"><span>01</span><div><strong>Test</strong><small>Submit controlled input</small></div></div><div class="workflow-arrow">→</div>
+      <div class="workflow-step"><span>02</span><div><strong>Observe</strong><small>Inspect browser behavior</small></div></div><div class="workflow-arrow">→</div>
+      <div class="workflow-step"><span>03</span><div><strong>Protect</strong><small>Verify output encoding</small></div></div>
+    </section>
+    <section class="section-heading" id="about"><div><div class="eyebrow"><span class="eyebrow-line"></span> EXPLORE THE LAB</div><h2>Two routes. One important lesson.</h2></div><p>See how the same user input is handled by two different implementations.</p></section>
+    <section class="demo-cards">
+      <article class="demo-card vulnerable-demo">
+        <div class="card-top"><span class="card-icon red-icon">!</span><span class="mode-badge unsafe"><span class="status-dot"></span> Vulnerable</span></div>
+        <div class="card-code">GET <b>/vulnerable</b></div><h3>Unsafe reflection</h3><p>User-controlled input is inserted into the HTML response without output encoding. Observe why the browser may interpret it as markup.</p>
+        <div class="card-bottom"><span class="card-tag">Intentionally insecure</span><a href="/vulnerable">Launch demo <span>↗</span></a></div>
+      </article>
+      <article class="demo-card secure-demo">
+        <div class="card-top"><span class="card-icon green-icon">✓</span><span class="mode-badge safe"><span class="status-dot"></span> Protected</span></div>
+        <div class="card-code">GET <b>/secure</b></div><h3>Encoded output</h3><p>HTML-significant characters are encoded before the query is included in the response, so the test input is displayed as text.</p>
+        <div class="card-bottom"><span class="card-tag">Mitigation applied</span><a href="/secure">Launch demo <span>↗</span></a></div>
+      </article>
+    </section>
+    <section class="bottom-note"><div class="note-mark">i</div><p><strong>Learning responsibly</strong> This application intentionally contains a vulnerable route for a classroom demonstration. Run it locally and never deploy the vulnerable version to a public server.</p><span class="note-lock">⌑</span></section>
+    <footer class="footer"><div class="footer-brand"><span class="brand-mark small">X</span> XSS LAB <span class="footer-sep">·</span> Web Server Security</div><span>Educational demo · Runs locally on your machine</span></footer>
+  </main>
+</body>
+</html>
